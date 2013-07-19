@@ -1,0 +1,28 @@
+#colophon{
+    max-width: 100%;
+    min-height: 2em;
+    padding: 1em 0;
+    background: $footer-background-color;
+    margin-top: 1em;
+    color: $footer-text-color;
+
+    a{
+        color: $footer-link-color;
+        text-shadow: none;
+        
+        &:hover{
+            color: $footer-link-hover-color;
+            text-shadow: none;
+        }
+    }
+
+    .widget-title{
+        color: $footer-widget-title-color;
+    }
+
+    #searchform{
+        label{
+            color: $footer-widget-title-color;
+        }
+    }
+}

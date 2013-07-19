@@ -1,0 +1,40 @@
+h1, h2, h3, h4{
+    font-weight: $light-weight;
+}
+
+a{
+    color: $link-color;
+    text-decoration: none;
+
+    &:visted{
+        color: $visited-link-color;
+
+    }
+}
+
+.entry-title{
+
+    font-size: 2em;
+    
+     a{
+        font-size: $entry-title-size;
+        text-decoration: none;
+        color: $title-color;
+        font-weight: $light-weight;
+        font-family: $title-font-stack;
+        letter-spacing: $title-letter-spacing;
+    }
+}
+
+.widget-title{
+    font-size: $widget-title-size;
+    text-decoration: none;
+    color: $widget-title-color;
+    font-weight: $light-regular-weight;
+    font-family: $title-font-stack;
+    letter-spacing: $title-letter-spacing;
+}
+
+#colophon{
+    text-align: center;
+}

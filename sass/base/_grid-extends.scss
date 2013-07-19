@@ -1,0 +1,42 @@
+#main,
+#colophon,
+#head-container,
+#footer-widgets{
+    @extend .row;
+}
+#primary{
+    @extend site-content;
+    @extend content-area;
+    @extend .twelve;
+    @extend .columns;
+}
+#secondary{
+    @extend .three;
+    @extend .columns;
+    display: none;
+}
+
+#primary .fullwidth{
+    @extend .twelve;
+    @extend .columns;
+}
+
+#primary .leftsidebar{
+    @extend .nine;
+    @extend .columns;
+}
+
+.footer-widget{
+    @extend .three;
+    @extend .columns;
+}
+
+.error404 #primary,
+.site-info,
+.attachment #primary{
+    @extend .twelve;
+    @extend .columns;
+}
+.attachment #primary{
+    @extend .image-attachment;
+}

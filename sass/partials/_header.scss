@@ -1,0 +1,17 @@
+.site-title{
+    margin-bottom: 0em;
+    
+    a{
+        font-size: $site-title-size;
+        text-decoration: none;
+        color: $title-color;
+        font-weight: $header-font-weight;
+        font-family: $title-font-stack;
+    }
+}
+
+.site-description{
+    font-size: $tagline-font-size;
+    font-weight: $tagline-font-weight;
+    margin-top: 0em;
+}

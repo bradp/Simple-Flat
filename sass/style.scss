@@ -1,0 +1,224 @@
+/*!
+Theme Name: SimpleFlat
+Author: Brad Parbs
+Description: SimpleFlat is a simple blogging theme for WordPress. Large, clear typography, and very clear design. Let your readers focus on your words, not your flashy site.
+Tags: black, white, orange, flexible-width, one-column, custom-menu, full-width-template, post-formats, sticky-post, translation-ready, threaded-comments, rtl-language-support, custom-colors
+Theme URI: http://bradparbs.com/simpleflat;
+Author URI: http://bradparbs.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.4.5
+textdomain: simpleflat;
+
+simpleflat is based on simpleflat, which is based on _S ("Underscores"), Copyright (c) 2013 Brad Parbs http://bradparbs.com;
+*/
+
+/* Reset, _s, Grid System */
+@import "base/reset";
+/* #@import "base/normalize"; Uncomment and comment out the above line for normalize, instead of reset */ 
+@import "base/s";
+@import "base/foundation-grid";
+@import "base/grid-extends";
+
+
+/* Collection of Mixins */
+@import "modules/mixins/maths";
+@import "modules/mixins/shapes";
+@import "modules/mixins/misc";
+@import "modules/mixins/typography";
+
+@import "modules/mixins/media-queries";
+
+/* Variables */
+@import "modules/variables";
+
+/* General Styling */
+@import "partials/layout";
+@import "partials/typography";
+
+@import "partials/header";
+@import "partials/menus";
+@import "partials/footer";
+@import "partials/buttons";
+@import "partials/forms";
+@import "partials/media";
+@import "partials/hacks";
+
+/* Page / Post / Ect - Specific */
+@import "partials/wp/404";
+@import "partials/wp/archive";
+@import "partials/wp/comments";
+@import "partials/wp/content";
+@import "partials/wp/cpt";
+@import "partials/wp/image";
+@import "partials/wp/no-results";
+@import "partials/wp/page";
+@import "partials/wp/post";
+@import "partials/wp/search";
+@import "partials/wp/sidebar";
+
+
+
+.sticky{}
+.gallery-caption{}
+.bypostauthor{}
+
+
+.color-wrapper{
+	width: 100%;
+
+}
+#header-wrapper{
+	background-color: rgba(15, 15, 15, 0.92);
+	color: #757575;
+	
+	a{
+		color: white;
+	}
+}
+
+p{
+	font-size: 1.5em;
+	line-height: 1.6em;
+	font-weight: 100;
+}
+
+.entry-title {
+	font-size: 3em;
+	text-decoration: none;
+	color: #555;
+	font-weight: 100;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.07em;
+	margin-bottom: 0em;
+}
+
+#main-nav-wrapper{
+	width: 100%;
+}
+#site-navigation{
+	background-color: #FB6868;
+	border-bottom: 3px solid darken(#FB6868, 10%);
+}
+#main-nav {
+	height: 58px;
+	font-size: 11px;
+	font-weight: bold;
+	position: relative;
+}
+
+nav{
+	.menu{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+
+.site-branding{
+	width: 90%;
+	@include breakpoint('regular'){
+		max-width: 960px;
+	}
+	margin: 0 auto;
+	color: #FFF;
+
+}
+
+#colophon{
+	background-color: rgba(15, 15, 15, 0.92);
+}
+
+#comments p{
+	font-size: .8em;
+}
+
+.comment-list{
+	list-style: none;
+	background-color: #C5C5C5;
+	time{
+		font-size: .6em;
+	}
+	.reply{
+		font-size: .8em;
+	}
+}
+
+.main-navigation ul ul, .footer-navigation ul ul {
+	background-color: #B65656;
+}
+
+.form-allowed-tags code{
+	font-size: .8em;
+}
+
+#mm0{
+	width: 100%;
+}
+
+.nav-previous, .nav-next{
+	width: auto !important;
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: #E2E1E1;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
+.comments-title{
+	margin-bottom: 0;
+}
+
+#comments{
+	padding: 1em;
+	background: #CFCFCF;
+	padding-bottom: .5em;
+	margin-top: 1em;
+	border-bottom: 2px solid #505050;
+}
+
+#respond{
+	margin-top: 2em;
+}
+
+.entry-meta{
+	font-style: italic;
+	font-size: .8em;
+}
+
+
+
+.header-img{
+	float: left;
+	max-width: 150px;
+	padding: .2em;
+	display: block;
+	margin-right: 1em;
+
+}
+.header-text{
+	float:left;
+	.entry-title{
+		margin-top: 0em;
+	}
+}
+.entry-content{
+	clear: both;
+}
+
+.entry-header{
+	margin-top: 2em;
+}
+
+.wp-caption{
+	background-color: #ccc;
+}
+
+.entry-title{
+	max-width: 960px;
+}
+
+.sticky{display: block;}
+.gallery-caption{display: block;}
+.bypostauthor{display: block;}
